@@ -1,0 +1,114 @@
+.Reasons{
+    padding: 0 2rem;
+    display: flex;
+    grid-template: 2rem;  
+    gap: 2rem;
+}
+.left-r{
+    flex: 1 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+    grid-auto-rows: 1fr;
+}
+
+.left-r>img{
+    object-fit: cover;
+}
+/* .left-r>:nth-child(1){
+    width: 15rem;
+    grid-row: 1/3;
+    grid-column: 1/1;
+    height:34rem;
+    cursor: pointer;
+}
+.left-r>:nth-child(2){
+    width:28rem;
+   height:18rem;
+    grid-row: 1;  
+    grid-column: 2/3; 
+    cursor: pointer;
+}
+.left-r>:nth-child(3){
+    width:28rem;
+    height:15.5rem;
+    grid-column:2/3;
+    grid-row: 2;   
+    cursor: pointer;
+} */
+
+
+.left-r > :nth-child(1) {
+    width: 15rem;
+    grid-row: 1 / 3;
+    grid-column: 1 / 1;
+    height: 34rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition */
+    transform-origin: center; /* Ensures the image scales from the center */
+}
+
+.left-r > :nth-child(2) {
+    width: 28rem;
+    height: 18rem;
+    grid-row: 1;  
+    grid-column: 2 / 3; 
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition */
+    transform-origin: center; /* Ensures the image scales from the center */
+}
+
+.left-r > :nth-child(3) {
+    width: 28rem;
+    height: 15.5rem;
+    grid-column: 2 / 3;
+    grid-row: 2;   
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition */
+    transform-origin: center; /* Ensures the image scales from the center */
+}
+
+/* Hover effect for all images */
+.left-r > :nth-child(1):hover,
+.left-r > :nth-child(2):hover,
+.left-r > :nth-child(3):hover {
+    transform: scale(1.1); /* Enlarge the image by 10% on hover */
+    border: 2px solid #000; /* Optional: Add a border on hover */
+}
+
+.right-r{
+    flex:1 1;
+    gap: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+} 
+
+.right-r>span{
+    font-weight: bold;
+    color: orange;
+}
+.right-r>div{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.details-r{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.details-r>div{
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+}
+.details-r>div>img{
+    width: 2rem;
+    height: 2rem;
+}
+.partner{
+    display: flex;
+    gap: 1rem;
+}
